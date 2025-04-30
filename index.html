@@ -65,6 +65,31 @@
             color: #666;
             font-size: 14px;
         }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .gallery img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 5px;
+            transition: transform 0.3s;
+        }
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+        .photo-section {
+            margin-top: 30px;
+        }
+        .photo-title {
+            text-align: center;
+            font-weight: bold;
+            margin-bottom: 15px;
+            color: #5e3c1a;
+        }
     </style>
 </head>
 <body>
@@ -80,6 +105,29 @@
         <p><strong>ဖြေဆိုခွင့်ရှိသူများ:</strong> ဗုဒ္ဓဘာသာဝင် ရဟန်း၊ သီလရှင်၊ လူပုဂ္ဂိုလ်များ</p>
         
         <a href="https://example.com/register" class="register-btn">စာရင်းသွင်းရန်</a>
+    </div>
+
+    <div class="section">
+        <h2>ပြီးခဲ့သည့်နှစ်က စာမေးပွဲမှ ဓာတ်ပုံများ</h2>
+        <div class="photo-section">
+            <div class="photo-title">၂၀၂၂ ခုနှစ် စာမေးပွဲဖြေဆိုစဉ်</div>
+            <div class="gallery">
+                <img src="img/exam1.jpeg" alt="စာမေးပွဲဖြေဆိုစဉ် ဓာတ်ပုံ ၁">
+                <img src="img/exam2.jpeg" alt="စာမေးပွဲဖြေဆိုစဉ် ဓာတ်ပုံ ၂">
+                <img src="img/exam3.jpeg" alt="စာမေးပွဲဖြေဆိုစဉ် ဓာတ်ပုံ ၃">
+                <img src="img/exam4.jpeg" alt="စာမေးပွဲဖြေဆိုစဉ် ဓာတ်ပုံ ၄">
+            </div>
+        </div>
+
+        <div class="photo-section">
+            <div class="photo-title">၂၀၂၂ ခုနှစ် ဆုချီးမြှင့်ပွဲ</div>
+            <div class="gallery">
+                <img src=prize1JPG alt="ဆုချီးမြှင့်ပွဲ ဓာတ်ပုံ ၁">
+                <img src=prize2JPG alt="ဆုချီးမြှင့်ပွဲ ဓာတ်ပုံ ၂">
+                <img src=prize3JPG alt="ဆုချီးမြှင့်ပွဲ ဓာတ်ပုံ ၃">
+                <img src=prize4JPG alt="ဆုချီးမြှင့်ပွဲ ဓာတ်ပုံ ၄">
+            </div>
+        </div>
     </div>
 
     <div class="section">
